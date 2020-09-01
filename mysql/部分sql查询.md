@@ -54,9 +54,9 @@ FROM
 
 else sex 如果性别不为0或1则为sex值 如果不加为null
 
-![img](D:\资料\note\weixinobU7VjmB4gE2gQfKWrwAnEjXNEuk\a732d89af8ef45469dd027e1fc92c8b1\qq截图20200721180711.png)
+![img](images/qq截图20200721180711.png)
 
-![img](D:\资料\note\weixinobU7VjmB4gE2gQfKWrwAnEjXNEuk\7d58c031f2d8457bb9cc24fe495f4051\qq截图20200721180725.png)
+![img](images/qq截图20200721180725.png)
 
 查出人员的姓名和年龄，和职位名称 并且以年龄的降序排序
 

@@ -1,0 +1,62 @@
+<script>
+ const user={
+        name:"zhangsna",
+        sex:'男',
+        age:20
+    }
+    //获取对应的key和value
+    console.log(Object.keys(user))
+
+    
+    console.log(Object.values(user))
+    console.log(Object.entries(user))
+    
+
+    //将source和source复制给target
+    const target={a:1}
+    const source={b:2}
+    const souce1={c:3}
+
+    Object.assign(target,source,souce1)
+
+    console.log(target)
+
+
+    const name="柳荫"
+    const age=14
+
+    const person={name,age}
+    const person1={name:name,age:age}
+
+    console.log(person)
+
+
+    const person2={
+        name:"嘤嘤嘤",
+       eat:function(food){
+        console.log(this.name+"在吃"+food)
+       },
+       eat1:food=>{
+           //箭头函数不能使用this
+        console.log(person2.name+"在吃"+food)
+       },
+       eat2(food){
+        console.log(this.name+"在吃"+food)
+       }
+    }
+   person2.eat("牛奶")
+   person2.eat1("牛奶")
+   person2.eat2("牛奶")
+    
+   //深拷贝
+   const user1={name:"小聪明"}
+   const user2={...user1}
+   console.log(user2)
+
+   const m={age:123}
+   const p1={age:12}
+   const sex={sex:"女"}
+   //后面的值会覆盖掉前面的值
+   const user3={...m,...p1}
+   console.log(user3)
+</script>
